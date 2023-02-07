@@ -58,7 +58,7 @@ public class MainActivity extends Activity {
                     Toast.LENGTH_SHORT).show();
             finish();
         }
-        ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.BLUETOOTH_SCAN,Manifest.permission.BLUETOOTH_CONNECT}, 2);
+        ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.BLUETOOTH_SCAN,Manifest.permission.BLUETOOTH_CONNECT, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 2);
     }
     private void initializeBluetooth() {
         final BluetoothManager bluetoothManager =
